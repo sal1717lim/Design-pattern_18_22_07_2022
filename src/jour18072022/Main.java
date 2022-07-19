@@ -30,9 +30,24 @@ public class Main {
             return n*factor(n-1);
         }
     }
+    public static int cpt=0;
+    public static int produit(int nb1,int nb2){
+        if(nb1==0 || nb2==0){
+            return 0;
+        }else{
 
+            if(nb1<nb2){
+                int _tmp=nb1;
+                nb1=nb2;
+                nb2=_tmp;
+            }
+            Main.cpt++;
+            return nb1+produit(nb1,nb2-1);
+        }
+    }
     public static void main(String[] args) {
-        System.out.println(Main.puissance(5,10));
+        System.out.println(Main.produit(2,10));
+        System.out.println(Main.cpt);
 
     }
 }
