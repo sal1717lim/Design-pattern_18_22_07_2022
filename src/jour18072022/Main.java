@@ -46,8 +46,17 @@ public class Main {
         }
     }
     public static void main(String[] args) {
-        System.out.println(Main.produit(2,10));
-        System.out.println(Main.cpt);
 
+        Binarytree racine=new Binarytree(1,true);
+        racine.gauche=new Binarytree(2,false);
+        racine.droite=new Binarytree(3,false);
+        racine.gauche.gauche=new Binarytree(4,false);
+        racine.gauche.droite=new Binarytree(5,false);
+        racine.droite.gauche=new Binarytree(6,false);
+        racine.droite.droite=new Binarytree(7,false);
+        racine.droite.gauche.gauche=new Binarytree(8,false);
+        racine.droite.gauche.droite=new Binarytree(9,false);
+        racine.droite.droite.droite=new Binarytree(10,false);
+        Binarytree.afficherarbre_profondeur(racine);
     }
 }
