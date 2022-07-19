@@ -9,14 +9,18 @@ public class Main {
         }
     }
     public static void main(String[] args) {
-        Stack p1=new Stack();
-        p1=Stack.empiler("Simon",p1);
-        p1=Stack.empiler("Karima",p1);
-        p1=Stack.empiler("Sidy",p1);
-        Stack.consulter(p1);
-        p1=Stack.depiler(p1);
-        Stack.consulter(p1);
-        p1=Stack.depiler(p1);
-        Stack.consulter(p1);
+        Filepersonne p1=new Filepersonne("Aissi","Salim");
+
+        p1.enfiler(new Filepersonne("Maaroufi","Karima"));
+        p1.enfiler(new Filepersonne("DIAKHATE","Sidy"));
+        Filepersonne.consulter(p1);
+        p1=Filepersonne.defiler(p1);
+        Filepersonne.consulter(p1);
+        p1=Filepersonne.defiler(p1);
+        Filepersonne.consulter(p1);
+        p1=Filepersonne.defiler(p1);
+        Filepersonne.consulter(p1);
+
+
     }
 }
