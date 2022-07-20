@@ -1,4 +1,4 @@
-package jour20072022;
+package jour20072022.Builder;
 
 public class CarBuilder implements Builder{
     public Car car;

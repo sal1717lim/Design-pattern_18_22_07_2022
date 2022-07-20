@@ -1,4 +1,4 @@
-package jour20072022;
+package jour20072022.prototype;
 
 public class Employee implements Prototype{
     private int id;

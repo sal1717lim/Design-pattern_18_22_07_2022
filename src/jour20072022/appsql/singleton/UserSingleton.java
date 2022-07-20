@@ -1,4 +1,4 @@
-package jour20072022;
+package jour20072022.appsql.singleton;
 
 public class UserSingleton {
     private String nom;
@@ -39,8 +39,7 @@ public class UserSingleton {
     private String mail;
     private String password;
     private static UserSingleton singleton=new UserSingleton();
-    private
-    UserSingleton(){
+    private UserSingleton(){
 
     }
     private UserSingleton(String nom, String prenom, String mail, String password) {

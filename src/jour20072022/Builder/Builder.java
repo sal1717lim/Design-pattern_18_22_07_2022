@@ -1,4 +1,4 @@
-package jour20072022;
+package jour20072022.Builder;
 
 public interface Builder {
     public CarBuilder setEngine(int puissance);
